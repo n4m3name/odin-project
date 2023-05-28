@@ -1,2 +1,2 @@
 # odin-project
-Odin Project notes &amp; projects
+[Odin Project](https://www.theodinproject.com/) notes &amp; projects
