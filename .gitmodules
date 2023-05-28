@@ -1,0 +1,3 @@
+[submodule "foundations/4-html-foundations/odin-blog"]
+	path = foundations/4-html-foundations/odin-blog
+	url = git@github.com:n4m3name/odin-blog.git
