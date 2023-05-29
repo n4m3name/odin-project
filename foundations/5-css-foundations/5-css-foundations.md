@@ -183,4 +183,16 @@ Three methods:
 3. **Inline CSS**
    
    Makes it possible to add styles directly to HTML elements, but not recommended since messy.
+    ```
+    <body>
+        <div style="color: white; background-color: black;">...</div>
+    </body>
+    ```
 
+    \+ Assignment review:
+    1. ...
+    2. Can add multiple classes to single element by separating w space i.e. class = "class-one class-two"
+    3. ...
+    4. ...
+    5. Can limit styles to ancestors by separating w space i.e. `.ancestor .child {...}`
+    6. Order matters for css files!!!

@@ -1,3 +1,6 @@
 [submodule "foundations/4-html-foundations/odin-blog"]
 	path = foundations/4-html-foundations/odin-blog
 	url = git@github.com:n4m3name/odin-blog.git
+[submodule "foundations/5-css-foundations/odin-css-exercises"]
+	path = foundations/5-css-foundations/odin-css-exercises
+	url = git@github.com:n4m3name/odin-css-exercises.git
