@@ -42,9 +42,9 @@ div {
     color: red;
 }
 ```
-\+ **Note:** Can be used anywhere, syntax requires period.
+>\+ **Note:** Can be used anywhere, syntax requires period.
 
-\+ **Note:** Multiple classes can be added to a single element as a space-separated list i.e. `class="alert-text severe-alert"`. (Since whitespace separates, class names must be hyphenated.)
+>\+ **Note:** Multiple classes can be added to a single element as a space-separated list i.e. `class="alert-text severe-alert"`. (Since whitespace separates, class names must be hyphenated.)
 
 **ID Selectors:** Similar to class selectors, but unique (can only have one). Denoted by hashtag instead of period.
 ```
@@ -89,9 +89,9 @@ Selectors can be chained as list without separation, i.e. in the case of differe
   color: white;
 }
 ```
-\+ `.subsection.header` = "Subsection & header"; Syntax works for chaining any combination of selectors except >1 type (since an element can't be two types).
+>\+ `.subsection.header` = "Subsection & header"; Syntax works for chaining any combination of selectors except >1 type (since an element can't be two types).
 
-\+ Can also be used to chain classes & ID's, i.e. `.subsection#preview {...}`
+>\+ Can also be used to chain classes & ID's, i.e. `.subsection#preview {...}`
 
 ### **Descendant Combinator:**
 Represented by a single space between selectors, only causes elements to be selected if they also have an ancestor that matches the previous selector, i.e. `.ancestor .child {...}` selects `child` iff. nested within `ancestor`.
@@ -189,10 +189,45 @@ Three methods:
     </body>
     ```
 
-    \+ Assignment review:
-    1. ...
-    2. Can add multiple classes to single element by separating w space i.e. class = "class-one class-two"
-    3. ...
-    4. ...
-    5. Can limit styles to ancestors by separating w space i.e. `.ancestor .child {...}`
-    6. Order matters for css files!!!
+**\+ Assignment review:**
+1. ...
+2. Can add multiple classes to single element by separating w space i.e. class = "class-one class-two"
+3. ...
+4. ...
+5. Can limit styles to ancestors by separating w space i.e. `.ancestor .child {...}`
+6. Order matters for css files!!!
+
+**\+ Knowledge check:**
+1. Syntax for class/ID selectors?
+   
+   .class/#ID
+
+2. How would you apply a single rule to two dif selectors?
+
+    Set both selectors within the same class:
+    ```
+    <s1 class="same">...
+    <s2 class="same">...
+    ```
+    ```
+    .same {...}
+    ```
+3. Given an element w id `title` & class `primary`, how would you use both attributes for a single rule?
+   
+   ```
+    .primary#title {...}
+   ```
+
+4. What does the descendant combinator do?
+   
+   Applies rules iff. instance of class is a descendant of superclass.
+
+5. 3 ways to add CSS to HTML?
+   1. External
+   2. Internal
+   3. Inline
+
+6. Main differences between 3 aforementioned ways?
+   1. External in seperate file
+   2. Internal within `<head>`
+   3. Inline defined within `<tag>`
