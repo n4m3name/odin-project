@@ -231,3 +231,5 @@ Three methods:
    1. External in seperate file
    2. Internal within `<head>`
    3. Inline defined within `<tag>`
+
+\+ [CSS Values & units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
