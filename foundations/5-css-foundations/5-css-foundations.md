@@ -233,3 +233,105 @@ Three methods:
    3. Inline defined within `<tag>`
 
 \+ [CSS Values & units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
+
+<br>
+
+## **The Cascade**
+
+3 factors which determine which rules are applied to the HTML:
+
+1. **Specificity**
+   
+   More specific declarations take precedence; ID > Class > Type. When no declaration has a selector w higher specificity, a larger amount of a single selector beats a smaller amount of the same selector. EX's:
+   ```
+    <!-- index.html -->
+    <div class="main">
+        <div class="list subsection"></div>
+        </div>
+   ```
+   ```
+    /* rule 1 */
+    .subsection {
+        color: blue;
+        }
+
+    /* rule 2 */
+    .main .list {
+        color: red;
+        }
+   ```
+   Above, both class but rule 2 > rule 1 since using more selectors.
+
+   ```
+    <!-- index.html -->
+    <div class="main">
+        <div class="list" id="subsection"></div>
+    </div>
+   ```
+   ```
+    /* rule 1 */
+    #subsection {
+        color: blue;
+        }
+
+    /* rule 2 */
+    .main .list {
+        color: red;
+        }
+   ```
+    Above, rule 1 > rule 2.
+
+    ```
+    /* rule 1 */
+    #subsection .list {
+        background-color: yellow;
+        color: blue;
+    }
+
+    /* rule 2 */
+    #subsection .main .list {
+        color: red;
+    }    
+    ```
+    In this case, both use ID & class so none more specific. Both have one ID, but rule 2 has more class selectors thus rule 2 > rule 1.
+
+    \+ Chaining/descendant combinator are of same specificity; `.class.second-class` = `.class .second-class`. Applies to child combinators (`>`).
+
+    \+ `*` (Universal selector) has no specificity value thus is always overridden.
+
+2. **Inheritance**
+   
+   Direct targeting > inheritance, i.e.
+   ```
+    <!-- index.html -->
+    <div id="parent">
+        <div class="child"></div>
+    </div>
+   ```
+   ```
+    /* styles.css */
+    #parent {
+        color: red;
+        }
+
+    .child {
+        color: blue;
+    }
+   ```
+   Here, child blue since declaration directly targets (despite red being inherited).
+
+3. **Rule order**
+   
+   Whichever is defined last 'wins'.
+
+    ```
+    /* styles.css */
+    .alert {
+        color: red;
+        }
+
+    .warning {
+        color: yellow;
+        }
+    ```
+
