@@ -425,3 +425,8 @@ Item won't make new line, but respects both `width` & `height`
 
 [Default block/inline elements](https://www.w3schools.com/html/html_blocks.asp)
 
+\+ Notes from margin & padding exercises:
+- To quickly define TB/LR padding, use `padding: TBpx LRpx`
+- To align text: `text-align`
+- To align 'stacked' boxes, often must define `margin-top` & `margin-bottom` for 1st, `margin-bottom` for rest.
+
