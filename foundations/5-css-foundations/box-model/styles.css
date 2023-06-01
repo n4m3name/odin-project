@@ -1,0 +1,68 @@
+/* box-model demo */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+
+.box-one {
+    background-color: red;
+    padding: 20px;
+    border: 20px solid purple;
+    margin: 60px;
+    height: 100px;
+    width: 100px;
+}
+
+.box-two {
+    background-color: blue;
+    padding: 20px;
+    border: 20px solid black;
+    margin: 60px;
+}
+
+/* Block */
+p, 
+ul {
+  border: 2px solid rebeccapurple;
+  padding: .5em;
+}
+
+.block,
+li {
+  border: 2px solid blue;
+  padding: .5em;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.block {
+  display: block;
+}  
+
+/* Inline */
+/*
+p, 
+ul {
+  border: 2px solid rebeccapurple;
+}
+
+span,
+li {
+  border: 2px solid blue;
+}
+
+ul {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+} 
+
+.inline {
+  display: inline;
+} 
+*/

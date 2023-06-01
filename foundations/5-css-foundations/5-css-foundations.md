@@ -158,7 +158,7 @@ Three methods:
         color: red;
     }   
    ```
-   \+ **Note:** The `rel` attribute is required, specifies relationship between the HTML file & linked file
+   **\+ Note:** The `rel` attribute is required, specifies relationship between the HTML file & linked file
 
 2. **Internal CSS**
    
@@ -334,4 +334,94 @@ Three methods:
         color: yellow;
         }
     ```
+
+<br>
+
+## **Inspecting HTML & CSS**
+
+To open inspector, press F12. Use mouse icon to inspect elements w mouse. Styles displayed on right. Overwritten styles displayed w strike-through.
+
+<br>
+
+## The Box Model
+
+To see boxes:
+```
+* {
+  border: 2px solid red;
+}
+```
+
+4 properties of boxes:
+
+1.Content box: Sized using `inline-size`, `block-size`, `width`, `height`, etc.
+2. `padding`: Whitespace around content
+3. `border`: Adds space between margin & padding; wraps content & padding
+    - Incl.`border-width`, `border-style`, `border-color`
+4. `margin`: Increases space between borders of box & borders of adjacent boxes
+
+\+ All include `x-top`, `x-right`, `x-bottom`, `x-left`.
+
+[MDN box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
+
+### **Outer display type**
+
+**Block boxes (Up/Dn)**
+- Breaks into new line
+- `width`\`height` respected
+- Padding/margin/border causes other elements to be pushed away from box
+- If `width` not specified, box extends in inline direction to fill the space available in its container (in most cases fills entire container).
+- `h1` & `p` use block as outer display type by default
+
+**Inline Boxes (L/R)**
+- Box does not break onto a new line
+- `width`/`height` do not apply
+- Top & bottom padding, margins, borders apply but do not cause other inline boxes to move away from the box
+- L/R padding apply, will cause other inline boxes to move away from box
+- `<a>`, `<span>`, `<em>`, `<strong>` use inline as outer display type by default
+
+### **Inner display type**
+... See flexbox
+
+### **Std. vs alternative box model**
+To turn on alternative model (common for devs):
+```
+.box {
+  box-sizing: border-box;
+}
+```
+Standard takes width/height as width/height of content box, while alternative takes width/height as literal (incl. padding, border, margin).
+
+### **display:inline-block**
+Item won't make new line, but respects both `width` & `height` 
+
+
+**\+ Knowledge check:**
+
+1. Order of box-model properties?
+   1. padding
+   2. border
+   3. margin
+2. `box-sizing' css property: turns on alternative model
+3. Std.vs alt box model: Alternative counts all as size, std. counts content
+4. margin to create space between two elements
+5. padding to create space between contents and border
+6. margin to create overlap
+7. to use alt model: 
+   ```
+    .box {
+        box-sizing: border-box;
+    }
+    ```
+8. use `auto` value to centre automatically
+
+<br>
+
+## **Block and Inline**
+
+**Divs & Spans**
+- Div: Block-level, used as a container to group other elements.
+- Span: Inline-level, used to group text & inline elements (ex: class="highlight")
+
+[Default block/inline elements](https://www.w3schools.com/html/html_blocks.asp)
 
