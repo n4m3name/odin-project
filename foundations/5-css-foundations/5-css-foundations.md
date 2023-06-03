@@ -19,7 +19,7 @@ Refer to HTML elements to which CSS rules apply.
     color: purple;
 }
 ```
-**Type Selector:** selects all elements of given type
+**Type Selector:** Selects all elements of given type
 ```
 <!-- index.html -->
 <div>Hello, World!</div>
