@@ -65,16 +65,14 @@ Can work horizontally (`row`) or vertically (`column`):
   - `center`: ...
   - `stretch`: ...
   - `baseline`: aligns at bottom of each item  
-
-  \+ `align-self': Same values as align-items, safe works on single child instead of whole container.
-
-\+ Possible values:
-- flex-start: Start of main axis (Left/up by default)
-- flex-end: End of main axis (Right/down by default)
-- center: ...
-- space-around: Each item has equal space on LHS/RHS, additive (twice as much between as on edges)
-- space-between: Each item has space between it and next item
-- space-evenly: Equal space on LHS/RHS regardless of between or edge
+- `align-self`: Same values as align-items, safe works on single child instead of whole container.
+  \+ Possible values:
+  - flex-start: Start of main axis (Left/up by default)
+  - flex-end: End of main axis (Right/down by default)
+  - center: ...
+  - space-around: Each item has equal space on LHS/RHS, additive (twice as much between as on edges)
+  - space-between: Each item has space between it and next item
+  - space-evenly: Equal space on LHS/RHS regardless of between or edge
 
 Note that when `flex-direction` is changed, so is the orientation of main/cross axes (i.e. Changing from default to `flex-direction: column` results in `justify-content` aligning vertically, `align-items' horizontally).
 
@@ -100,4 +98,6 @@ Note that when `flex-direction` is changed, so is the orientation of main/cross 
 
 \+ [Flexbox cheat-sheet/visual guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)  
 \+ [MDN flexbox use cases](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox)  
-\+ 
+
+\+ Exercise notes:
+- 
