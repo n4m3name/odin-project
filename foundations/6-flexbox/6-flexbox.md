@@ -65,7 +65,7 @@ Can work horizontally (`row`) or vertically (`column`):
   - `center`: ...
   - `stretch`: ...
   - `baseline`: aligns at bottom of each item  
-- `align-self`: Same values as align-items, safe works on single child instead of whole container.
+- `align-self: value`: Same values as align-items, safe works on single child instead of whole container.
   \+ Possible values:
   - flex-start: Start of main axis (Left/up by default)
   - flex-end: End of main axis (Right/down by default)
@@ -98,6 +98,3 @@ Note that when `flex-direction` is changed, so is the orientation of main/cross 
 
 \+ [Flexbox cheat-sheet/visual guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)  
 \+ [MDN flexbox use cases](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox)  
-
-\+ Exercise notes:
-- 
