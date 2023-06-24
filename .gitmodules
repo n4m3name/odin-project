@@ -7,3 +7,6 @@
 [submodule "foundations/6-flexbox/odin-landing-page"]
 	path = foundations/6-flexbox/odin-landing-page
 	url = git@github.com:n4m3name/odin-landing-page.git
+[submodule "foundations/7-javascript-basics/odin-rock-paper-scissors"]
+	path = foundations/7-javascript-basics/odin-rock-paper-scissors
+	url = git@github.com:n4m3name/odin-rock-paper-scissors.git
